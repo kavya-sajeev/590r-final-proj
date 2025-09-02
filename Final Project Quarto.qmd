@@ -2,5 +2,17 @@
 title: "Final Project Quarto"
 format: html
 ---
+install and load packages
+```{r}
+install.packages("usethis")
+install.packages("here")
+install.packages("flextable")
+install.packages("broom")
+install.packages("renv")
+library("usethis")
+library("here")
+library("flextable")
+library("broom")
+library("renv")
+```
 
-test
