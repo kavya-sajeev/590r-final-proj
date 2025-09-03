@@ -1,9 +1,12 @@
 ---
 title: "Final Project Quarto"
 format: html
+echo: false
+warning: false
 ---
-
+The present report uses the "Educational attainment of young people in English towns" data set provided by the UK Office of National Statistics. The data set collected information based on students who took their GCSEs between 2012 and 2013. 
 ```{r}
+#| message: false
 #load packages and data set
 library("tidyverse")
 library("usethis")
@@ -17,13 +20,14 @@ uk<-read_csv(here::here("data","english_education.csv"))
 
 ```
 
+
 ```{r}
 #descriptive statistics
 #| label: tbl-descriptive
 #| tbl-cap: Descriptive statistics
 
 
-tbl_summary(
+tbl_descriptive<-tbl_summary(
 	uk,
 	by = coastal,
 	include= c("population_2011","income_flag","university_flag","education_score"),
@@ -35,8 +39,21 @@ tbl_summary(
 	),
 missing_text="Missing")
 
-```
+#inline stats
+coastaldep<- inline_text(tbl_descriptive, variable= "income_flag", column="stat_1")
+noncoastaldep<- inline_text(tbl_descriptive, variable= "income_flag", column="stat_2")
+stats<-list(n=nrow(uk),
+									median_edu=median(uk$education_score))
 
+#function
+percentmissing<-function(df,var){
+	missing<-sum(is.na(df[[var]]))
+	total<-nrow(df)
+	missing/total*100
+}
+
+```
+Descriptive statistics of the cohort are depicted above (@tbl-descriptive). (`r coastaldep`) percent of the coastal towns are higher deprivation towns, while `r noncoastaldep` percent of non-coastal towns are higher deprivation. The median education score of the cohort is `r stats$median_edu`. @fig-pop-hist depicts education score distribution. Some values are missing for educational attainment measures, though it is a small portion of the data. For example, `r percentmissing(uk,"activity_at_age_19_sustained_further_education")` percent of data is missing for Sustained Further Education at Age 19. 
 ```{r}
 #figure
 
@@ -46,9 +63,10 @@ hist(uk$education_score)
 
 ```
 
-
+A linear regression was conducted to assess the association between education score and multiple town factors, including town income deprivation status, presence of university in town, and population size. Regression results are shown below. 
 ```{r}
 #regression
+
 
 linear_model<-lm(education_score ~ income_flag + university_flag + population_2011, data=uk)
 
@@ -65,15 +83,7 @@ tbl_regression(
 ```
 
 ```{r}
-#function
 
-percentmissing<-function(df,var){
-	missing<-sum(is.na(df[[var]]))
-	total<-nrow(df)
-	missing/total*100
-}
-
-percentmissing(uk,"activity_at_age_19_sustained_further_education")
 	
 ```
 
