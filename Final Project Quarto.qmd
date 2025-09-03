@@ -53,7 +53,7 @@ percentmissing<-function(df,var){
 }
 
 ```
-Descriptive statistics of the cohort are depicted above (@tbl-descriptive). (`r coastaldep`) percent of the coastal towns are higher deprivation towns, while `r noncoastaldep` percent of non-coastal towns are higher deprivation. The median education score of the cohort is `r stats$median_edu`. @fig-pop-hist depicts education score distribution. Some values are missing for educational attainment measures, though it is a small portion of the data. For example, `r percentmissing(uk,"activity_at_age_19_sustained_further_education")` percent of data is missing for Sustained Further Education at Age 19. 
+Descriptive statistics of the cohort are depicted above (@tbl-descriptive). (`r coastaldep`) percent of the coastal towns are higher deprivation towns, while `r noncoastaldep` percent of non-coastal towns are higher deprivation. The median education score of the cohort is `r stats$median_edu`. 
 ```{r}
 #figure
 
@@ -62,6 +62,7 @@ Descriptive statistics of the cohort are depicted above (@tbl-descriptive). (`r 
 hist(uk$education_score)
 
 ```
+@fig-pop-hist depicts education score distribution. Some values are missing for educational attainment measures, though it is a small portion of the data. For example, `r percentmissing(uk,"activity_at_age_19_sustained_further_education")` percent of data is missing for Sustained Further Education at Age 19. 
 
 A linear regression was conducted to assess the association between education score and multiple town factors, including town income deprivation status, presence of university in town, and population size. Regression results are shown below. 
 ```{r}
@@ -82,8 +83,4 @@ tbl_regression(
 
 ```
 
-```{r}
-
-	
-```
 
