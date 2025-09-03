@@ -2,17 +2,49 @@
 title: "Final Project Quarto"
 format: html
 ---
-install and load packages
+
 ```{r}
-install.packages("usethis")
-install.packages("here")
-install.packages("flextable")
-install.packages("broom")
-install.packages("renv")
+#load datasets
+library("tidyverse")
 library("usethis")
 library("here")
 library("flextable")
 library("broom")
 library("renv")
+library("gtsummary")
+library("dplyr")
+uk<-read_csv(here::here("data","english_education.csv"))
+
+```
+
+```{r}
+#descriptive statistics
+tbl_summary(
+	uk,
+	by = coastal,
+	include= c("population_2011","income_flag","university_flag","education_score"),
+	label=list(
+		population_2011~"Town Population Size",
+		income_flag~"Town Income Deprivation Status",
+		university_flag~"Presence of University in Town",
+		education_score~"Education Score"
+	),
+missing_text="Missing")
+
+```
+
+```{r}
+#figure
+
+#| label:fig-pop-hist
+#| fig-cap: "Histogram of Population Size"
+hist(uk$education_score)
+
+```
+```{r}
+#regression
+
+
+
 ```
 
