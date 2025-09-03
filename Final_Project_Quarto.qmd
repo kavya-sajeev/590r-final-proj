@@ -43,10 +43,10 @@ tbl_descriptive<-tbl_summary(
 		university_flag~"Presence of University in Town",
 		education_score~"Education Score"
 	),
-missing_text="Missing")#|>
-#modify_caption("**Table 2: Descriptive Statistics**")
+missing_text="Missing")|>
+modify_caption("**Table 2: Descriptive Statistics**")
+tbl_descriptive
 
-as_kable_extra(tbl_descriptive)
 
 #inline stats
 coastaldep<- inline_text(tbl_descriptive, variable= "income_flag", level = "Higher deprivation towns", column = "Coastal")
@@ -58,7 +58,8 @@ stats<-list(n=nrow(uk),
 percentmissing<-function(df,var){
 	missing<-sum(is.na(df[[var]]))
 	total<-nrow(df)
-	missing/total*100
+	percent<-(missing/total*100)
+	round(percent, digits=2)
 }
 
 ```
