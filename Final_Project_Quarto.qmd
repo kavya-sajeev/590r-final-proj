@@ -90,7 +90,8 @@ tbl_regression(
 		university_flag~"Presence of University in Town",
 		population_2011~"Population Size"
 	)
-)
+)|> modify_caption("**Table 3: Linear Regression**")
+
 
 ```
 
