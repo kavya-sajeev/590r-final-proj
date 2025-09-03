@@ -68,9 +68,13 @@ Descriptive statistics of the cohort are depicted above (@tbl-descriptive). `r c
 #figure
 
 #| label:fig-pop-hist
-#| fig-cap: "Histogram of Population Size"
+#| fig-cap: "Histogram of Education Score"
 
-hist(uk$education_score)
+hist(uk$education_score,
+		 main = "Distribution of Education Score",
+		 xlab = "Education Score",
+		 ylab = "Frequency") 
+
 
 ```
 @fig-pop-hist depicts education score distribution. Some values are missing for educational attainment measures, though it is a small portion of the data. For example, `r percentmissing(uk,"activity_at_age_19_sustained_further_education")` percent of data is missing for Sustained Further Education at Age 19. 
