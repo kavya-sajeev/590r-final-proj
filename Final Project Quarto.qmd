@@ -33,7 +33,6 @@ knitr::kable(uksample, knitr.kable.NA = '')
 #| label: tbl-descriptive
 #| tbl-cap: Descriptive statistics
 
-
 tbl_descriptive<-tbl_summary(
 	uk,
 	by = coastal,
@@ -44,9 +43,10 @@ tbl_descriptive<-tbl_summary(
 		university_flag~"Presence of University in Town",
 		education_score~"Education Score"
 	),
-missing_text="Missing")|>
-modify_caption("**Table 1: Descriptive Statistics**")
-tbl_descriptive
+missing_text="Missing")#|>
+#modify_caption("**Table 2: Descriptive Statistics**")
+
+kable_descriptive<-tbl_descriptive|>as_kable_extra(caption="Table 2: Descriptive Statistics")
 
 #inline stats
 coastaldep<- inline_text(tbl_descriptive, variable= "income_flag", level = "Higher deprivation towns", column = "Coastal")
