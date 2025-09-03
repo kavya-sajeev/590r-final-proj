@@ -1,18 +1,17 @@
-Town,Town Size,Region,Job Density,Coastal,Town Classification,,,
-Carlton in Lindrick BUA,Small Towns,East Midlands,Residential,Non-coastal,Majority town and city (small),,,
-Dorchester (West Dorset) BUA,Small Towns,South West,Working,Non-coastal,Majority town and city (small),,,
-Ely BUA,Small Towns,East of England,Working,Non-coastal,Majority town and city (Large Towns),,,
-Beverley BUA,Medium Towns,Yorkshire and The Humber,Working,Non-coastal,Majority town and city (Large Towns),,,
-Haverhill BUA,Medium Towns,East of England,Mixed,Non-coastal,Majority town and city (Large Towns),,,
-St Leonards BUA,Small Towns,South West,Residential,Non-coastal,Majority town and city (Large Towns),,,
-Upton (Wakefield) BUA,Small Towns,Yorkshire and The Humber,Residential,Non-coastal,Majority town and city (Large Towns),,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
+Town,Town Size,Region,Job Density,Coastal,Town Classification,Population Size,University Presence,School Attainment 2007-08,Highest Level Education at 22,Education Score
+Carlton in Lindrick BUA,Small Towns,East Midlands,Residential,Non-coastal,Majority town and city (small),5456,No university,65,3.3230769230769233,-0.533750422
+Dorchester (West Dorset) BUA,Small Towns,South West,Working,Non-coastal,Majority town and city (small),19060,No university,69.05829596412556,3.7322175732217575,1.952018749
+Ely BUA,Small Towns,East of England,Working,Non-coastal,Majority town and city (Large Towns),19090,No university,71.42857142857143,3.5483870967741935,-1.044127985
+Market Weighton BUA,Small Towns,Yorkshire and The Humber,Residential,Non-coastal,Majority town and city (Large Towns),6429,No university,70.96774193548387,3.4827586206896552,-1.249261949
+Downham Market BUA,Small Towns,East of England,Mixed,Non-coastal,Majority rural,10884,No university,78.04878048780488,3.161290322580645,-1.169078452
+Penrith BUA,Small Towns,North West,Working,Non-coastal,Majority rural,15181,No university,73.85620915,3.4746835443037973,0.84513109
+Bolsover BUA,Small Towns,East Midlands,Residential,Non-coastal,Majority town and city (Large Towns),11754,No university,70.90909091,3.1016949152542375,-3.717919688
+March BUA,Medium Towns,East of England,Residential,Non-coastal,Majority town and city (small),21051,No university,71.06382978723404,3.2851063829787233,-2.171307159
+Southam BUA,Small Towns,West Midlands,Working,Non-coastal,Majority town and city (small),6567,No university,81.92771084337349,3.847826086956522,6.437661398
+Royston BUA,Small Towns,East of England,Working,Non-coastal,Majority town and city (Large Towns),15781,No university,73.03370786516854,3.3846153846153846,0.29540337
+Studley BUA,Small Towns,West Midlands,Working,Non-coastal,Majority conurbation,6203,No university,85.71428571428571,3.883116883116883,4.304494117
+Irthlingborough BUA,Small Towns,East Midlands,Residential,Non-coastal,Majority town and city (small),7502,No university,68.23529411764706,3,-4.001866891
+Freshwater BUA,Small Towns,South East,Residential,Coastal,Majority town and city (small),7829,No university,56.060606060606055,3.2253521126760565,-5.023115005
+Barnoldswick BUA,Small Towns,North West,Mixed,Non-coastal,Majority town and city (Large Towns),10435,No university,67.71653543307087,3.4031007751937983,-1.26838592
+Wirksworth BUA,Small Towns,East Midlands,Residential,Non-coastal,Majority town and city (Large Towns),5038,No university,70.90909091,3.3157894736842106,-1.264372252
+Dalton-in-Furness BUA,Small Towns,North West,Residential,Non-coastal,Majority town and city (small),7827,No university,78.64077669902912,3.419642857142857,-0.718396082

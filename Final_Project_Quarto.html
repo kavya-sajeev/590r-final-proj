@@ -62,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The present report uses the “Educational attainment of young people in English towns” data set provided by the UK Office of National Statistics. The data set collected information based on students who took their GCSEs between 2012 and 2013. <a href="#tbl-sample" class="quarto-xref">Table&nbsp;1</a> shows a sample of the data that was collected.</p>
+<p>The present report uses the “Educational attainment of young people in English towns” data set provided by the UK Office of National Statistics. The data set collected information based on students who took their GCSEs between 2012 and 2013, including educational attainment from primary school years until age 22. <a href="#tbl-sample" class="quarto-xref">Table&nbsp;1</a> shows a sample of the data that was collected.</p>
 <div class="cell">
 <div id="tbl-sample" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -73,15 +73,17 @@ Table&nbsp;1: Sample of data collected
 <div class="cell-output-display">
 <table class="do-not-create-environment cell caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 9%">
-<col style="width: 17%">
+<col style="width: 12%">
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 15%">
+<col style="width: 6%">
 <col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 25%">
-<col style="width: 3%">
-<col style="width: 3%">
-<col style="width: 3%">
+<col style="width: 11%">
+<col style="width: 12%">
+<col style="width: 6%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -91,9 +93,11 @@ Table&nbsp;1: Sample of data collected
 <th style="text-align: left;">Job Density</th>
 <th style="text-align: left;">Coastal</th>
 <th style="text-align: left;">Town Classification</th>
-<th style="text-align: left;">…7</th>
-<th style="text-align: left;">…8</th>
-<th style="text-align: left;">…9</th>
+<th style="text-align: right;">Population Size</th>
+<th style="text-align: left;">University Presence</th>
+<th style="text-align: right;">School Attainment 2007-08</th>
+<th style="text-align: right;">Highest Level Education at 22</th>
+<th style="text-align: right;">Education Score</th>
 </tr>
 </thead>
 <tbody>
@@ -104,9 +108,11 @@ Table&nbsp;1: Sample of data collected
 <td style="text-align: left;">Residential</td>
 <td style="text-align: left;">Non-coastal</td>
 <td style="text-align: left;">Majority town and city (small)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5456</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">65.00000</td>
+<td style="text-align: right;">3.323077</td>
+<td style="text-align: right;">-0.5337504</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Dorchester (West Dorset) BUA</td>
@@ -115,9 +121,11 @@ Table&nbsp;1: Sample of data collected
 <td style="text-align: left;">Working</td>
 <td style="text-align: left;">Non-coastal</td>
 <td style="text-align: left;">Majority town and city (small)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">19060</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">69.05830</td>
+<td style="text-align: right;">3.732218</td>
+<td style="text-align: right;">1.9520187</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Ely BUA</td>
@@ -126,163 +134,180 @@ Table&nbsp;1: Sample of data collected
 <td style="text-align: left;">Working</td>
 <td style="text-align: left;">Non-coastal</td>
 <td style="text-align: left;">Majority town and city (Large Towns)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">19090</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">71.42857</td>
+<td style="text-align: right;">3.548387</td>
+<td style="text-align: right;">-1.0441280</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Beverley BUA</td>
-<td style="text-align: left;">Medium Towns</td>
+<td style="text-align: left;">Market Weighton BUA</td>
+<td style="text-align: left;">Small Towns</td>
 <td style="text-align: left;">Yorkshire and The Humber</td>
-<td style="text-align: left;">Working</td>
+<td style="text-align: left;">Residential</td>
 <td style="text-align: left;">Non-coastal</td>
 <td style="text-align: left;">Majority town and city (Large Towns)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">6429</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">70.96774</td>
+<td style="text-align: right;">3.482759</td>
+<td style="text-align: right;">-1.2492619</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Haverhill BUA</td>
-<td style="text-align: left;">Medium Towns</td>
+<td style="text-align: left;">Downham Market BUA</td>
+<td style="text-align: left;">Small Towns</td>
 <td style="text-align: left;">East of England</td>
 <td style="text-align: left;">Mixed</td>
 <td style="text-align: left;">Non-coastal</td>
-<td style="text-align: left;">Majority town and city (Large Towns)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Majority rural</td>
+<td style="text-align: right;">10884</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">78.04878</td>
+<td style="text-align: right;">3.161290</td>
+<td style="text-align: right;">-1.1690785</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">St Leonards BUA</td>
+<td style="text-align: left;">Penrith BUA</td>
 <td style="text-align: left;">Small Towns</td>
-<td style="text-align: left;">South West</td>
+<td style="text-align: left;">North West</td>
+<td style="text-align: left;">Working</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority rural</td>
+<td style="text-align: right;">15181</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">73.85621</td>
+<td style="text-align: right;">3.474683</td>
+<td style="text-align: right;">0.8451311</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bolsover BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">East Midlands</td>
 <td style="text-align: left;">Residential</td>
 <td style="text-align: left;">Non-coastal</td>
 <td style="text-align: left;">Majority town and city (Large Towns)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">11754</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">70.90909</td>
+<td style="text-align: right;">3.101695</td>
+<td style="text-align: right;">-3.7179197</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">March BUA</td>
+<td style="text-align: left;">Medium Towns</td>
+<td style="text-align: left;">East of England</td>
+<td style="text-align: left;">Residential</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority town and city (small)</td>
+<td style="text-align: right;">21051</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">71.06383</td>
+<td style="text-align: right;">3.285106</td>
+<td style="text-align: right;">-2.1713072</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Upton (Wakefield) BUA</td>
+<td style="text-align: left;">Southam BUA</td>
 <td style="text-align: left;">Small Towns</td>
-<td style="text-align: left;">Yorkshire and The Humber</td>
+<td style="text-align: left;">West Midlands</td>
+<td style="text-align: left;">Working</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority town and city (small)</td>
+<td style="text-align: right;">6567</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">81.92771</td>
+<td style="text-align: right;">3.847826</td>
+<td style="text-align: right;">6.4376614</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Royston BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">East of England</td>
+<td style="text-align: left;">Working</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority town and city (Large Towns)</td>
+<td style="text-align: right;">15781</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">73.03371</td>
+<td style="text-align: right;">3.384615</td>
+<td style="text-align: right;">0.2954034</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Studley BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">West Midlands</td>
+<td style="text-align: left;">Working</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority conurbation</td>
+<td style="text-align: right;">6203</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">85.71429</td>
+<td style="text-align: right;">3.883117</td>
+<td style="text-align: right;">4.3044941</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Irthlingborough BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">East Midlands</td>
+<td style="text-align: left;">Residential</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority town and city (small)</td>
+<td style="text-align: right;">7502</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">68.23529</td>
+<td style="text-align: right;">3.000000</td>
+<td style="text-align: right;">-4.0018669</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Freshwater BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">South East</td>
+<td style="text-align: left;">Residential</td>
+<td style="text-align: left;">Coastal</td>
+<td style="text-align: left;">Majority town and city (small)</td>
+<td style="text-align: right;">7829</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">56.06061</td>
+<td style="text-align: right;">3.225352</td>
+<td style="text-align: right;">-5.0231150</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Barnoldswick BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">North West</td>
+<td style="text-align: left;">Mixed</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority town and city (Large Towns)</td>
+<td style="text-align: right;">10435</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">67.71654</td>
+<td style="text-align: right;">3.403101</td>
+<td style="text-align: right;">-1.2683859</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wirksworth BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">East Midlands</td>
 <td style="text-align: left;">Residential</td>
 <td style="text-align: left;">Non-coastal</td>
 <td style="text-align: left;">Majority town and city (Large Towns)</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: right;">5038</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">70.90909</td>
+<td style="text-align: right;">3.315790</td>
+<td style="text-align: right;">-1.2643723</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">Dalton-in-Furness BUA</td>
+<td style="text-align: left;">Small Towns</td>
+<td style="text-align: left;">North West</td>
+<td style="text-align: left;">Residential</td>
+<td style="text-align: left;">Non-coastal</td>
+<td style="text-align: left;">Majority town and city (small)</td>
+<td style="text-align: right;">7827</td>
+<td style="text-align: left;">No university</td>
+<td style="text-align: right;">78.64078</td>
+<td style="text-align: right;">3.419643</td>
+<td style="text-align: right;">-0.7183961</td>
 </tr>
 </tbody>
 </table>
@@ -293,23 +318,23 @@ Table&nbsp;1: Sample of data collected
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="nfzpapxjay" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#nfzpapxjay table {
+<div id="jsjqhxoovy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jsjqhxoovy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#nfzpapxjay thead, #nfzpapxjay tbody, #nfzpapxjay tfoot, #nfzpapxjay tr, #nfzpapxjay td, #nfzpapxjay th {
+#jsjqhxoovy thead, #jsjqhxoovy tbody, #jsjqhxoovy tfoot, #jsjqhxoovy tr, #jsjqhxoovy td, #jsjqhxoovy th {
   border-style: none;
 }
 
-#nfzpapxjay p {
+#jsjqhxoovy p {
   margin: 0;
   padding: 0;
 }
 
-#nfzpapxjay .gt_table {
+#jsjqhxoovy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -335,12 +360,12 @@ Table&nbsp;1: Sample of data collected
   border-left-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_caption {
+#jsjqhxoovy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#nfzpapxjay .gt_title {
+#jsjqhxoovy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -352,7 +377,7 @@ Table&nbsp;1: Sample of data collected
   border-bottom-width: 0;
 }
 
-#nfzpapxjay .gt_subtitle {
+#jsjqhxoovy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -364,7 +389,7 @@ Table&nbsp;1: Sample of data collected
   border-top-width: 0;
 }
 
-#nfzpapxjay .gt_heading {
+#jsjqhxoovy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -376,13 +401,13 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_bottom_border {
+#jsjqhxoovy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_col_headings {
+#jsjqhxoovy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -397,7 +422,7 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_col_heading {
+#jsjqhxoovy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -417,7 +442,7 @@ Table&nbsp;1: Sample of data collected
   overflow-x: hidden;
 }
 
-#nfzpapxjay .gt_column_spanner_outer {
+#jsjqhxoovy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -429,15 +454,15 @@ Table&nbsp;1: Sample of data collected
   padding-right: 4px;
 }
 
-#nfzpapxjay .gt_column_spanner_outer:first-child {
+#jsjqhxoovy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#nfzpapxjay .gt_column_spanner_outer:last-child {
+#jsjqhxoovy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#nfzpapxjay .gt_column_spanner {
+#jsjqhxoovy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -449,11 +474,11 @@ Table&nbsp;1: Sample of data collected
   width: 100%;
 }
 
-#nfzpapxjay .gt_spanner_row {
+#jsjqhxoovy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#nfzpapxjay .gt_group_heading {
+#jsjqhxoovy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -479,7 +504,7 @@ Table&nbsp;1: Sample of data collected
   text-align: left;
 }
 
-#nfzpapxjay .gt_empty_group_heading {
+#jsjqhxoovy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -494,15 +519,15 @@ Table&nbsp;1: Sample of data collected
   vertical-align: middle;
 }
 
-#nfzpapxjay .gt_from_md > :first-child {
+#jsjqhxoovy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nfzpapxjay .gt_from_md > :last-child {
+#jsjqhxoovy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nfzpapxjay .gt_row {
+#jsjqhxoovy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -521,7 +546,7 @@ Table&nbsp;1: Sample of data collected
   overflow-x: hidden;
 }
 
-#nfzpapxjay .gt_stub {
+#jsjqhxoovy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -534,7 +559,7 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#nfzpapxjay .gt_stub_row_group {
+#jsjqhxoovy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -548,15 +573,15 @@ Table&nbsp;1: Sample of data collected
   vertical-align: top;
 }
 
-#nfzpapxjay .gt_row_group_first td {
+#jsjqhxoovy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#nfzpapxjay .gt_row_group_first th {
+#jsjqhxoovy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#nfzpapxjay .gt_summary_row {
+#jsjqhxoovy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -566,16 +591,16 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#nfzpapxjay .gt_first_summary_row {
+#jsjqhxoovy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_first_summary_row.thick {
+#jsjqhxoovy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#nfzpapxjay .gt_last_summary_row {
+#jsjqhxoovy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -585,7 +610,7 @@ Table&nbsp;1: Sample of data collected
   border-bottom-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_grand_summary_row {
+#jsjqhxoovy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -595,7 +620,7 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#nfzpapxjay .gt_first_grand_summary_row {
+#jsjqhxoovy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -605,7 +630,7 @@ Table&nbsp;1: Sample of data collected
   border-top-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_last_grand_summary_row_top {
+#jsjqhxoovy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -615,11 +640,11 @@ Table&nbsp;1: Sample of data collected
   border-bottom-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_striped {
+#jsjqhxoovy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#nfzpapxjay .gt_table_body {
+#jsjqhxoovy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -628,7 +653,7 @@ Table&nbsp;1: Sample of data collected
   border-bottom-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_footnotes {
+#jsjqhxoovy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -642,7 +667,7 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_footnote {
+#jsjqhxoovy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -651,7 +676,7 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#nfzpapxjay .gt_sourcenotes {
+#jsjqhxoovy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -665,7 +690,7 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#nfzpapxjay .gt_sourcenote {
+#jsjqhxoovy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -673,72 +698,72 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#nfzpapxjay .gt_left {
+#jsjqhxoovy .gt_left {
   text-align: left;
 }
 
-#nfzpapxjay .gt_center {
+#jsjqhxoovy .gt_center {
   text-align: center;
 }
 
-#nfzpapxjay .gt_right {
+#jsjqhxoovy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nfzpapxjay .gt_font_normal {
+#jsjqhxoovy .gt_font_normal {
   font-weight: normal;
 }
 
-#nfzpapxjay .gt_font_bold {
+#jsjqhxoovy .gt_font_bold {
   font-weight: bold;
 }
 
-#nfzpapxjay .gt_font_italic {
+#jsjqhxoovy .gt_font_italic {
   font-style: italic;
 }
 
-#nfzpapxjay .gt_super {
+#jsjqhxoovy .gt_super {
   font-size: 65%;
 }
 
-#nfzpapxjay .gt_footnote_marks {
+#jsjqhxoovy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#nfzpapxjay .gt_asterisk {
+#jsjqhxoovy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#nfzpapxjay .gt_indent_1 {
+#jsjqhxoovy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#nfzpapxjay .gt_indent_2 {
+#jsjqhxoovy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#nfzpapxjay .gt_indent_3 {
+#jsjqhxoovy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#nfzpapxjay .gt_indent_4 {
+#jsjqhxoovy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#nfzpapxjay .gt_indent_5 {
+#jsjqhxoovy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#nfzpapxjay .katex-display {
+#jsjqhxoovy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#nfzpapxjay div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jsjqhxoovy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -835,27 +860,27 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
 </div>
 </div>
 </div>
-<p><strong>?@fig-pop-hist</strong> depicts education score distribution. Some values are missing for educational attainment measures, though it is a small portion of the data. For example, 5.254 percent of data is missing for Sustained Further Education at Age 19.</p>
+<p><strong>?@fig-pop-hist</strong> depicts education score distribution. Some values are missing for educational attainment measures, though it is a small portion of the data. For example, 5.25 percent of data is missing for Sustained Further Education at Age 19.</p>
 <p>A linear regression was conducted to assess the association between education score and multiple town factors, including town income deprivation status, presence of university in town, and population size. Regression results are shown below.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="yhvjkwzlmh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#yhvjkwzlmh table {
+<div id="iypirxzurc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iypirxzurc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#yhvjkwzlmh thead, #yhvjkwzlmh tbody, #yhvjkwzlmh tfoot, #yhvjkwzlmh tr, #yhvjkwzlmh td, #yhvjkwzlmh th {
+#iypirxzurc thead, #iypirxzurc tbody, #iypirxzurc tfoot, #iypirxzurc tr, #iypirxzurc td, #iypirxzurc th {
   border-style: none;
 }
 
-#yhvjkwzlmh p {
+#iypirxzurc p {
   margin: 0;
   padding: 0;
 }
 
-#yhvjkwzlmh .gt_table {
+#iypirxzurc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -881,12 +906,12 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-left-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_caption {
+#iypirxzurc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#yhvjkwzlmh .gt_title {
+#iypirxzurc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -898,7 +923,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-bottom-width: 0;
 }
 
-#yhvjkwzlmh .gt_subtitle {
+#iypirxzurc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -910,7 +935,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-top-width: 0;
 }
 
-#yhvjkwzlmh .gt_heading {
+#iypirxzurc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -922,13 +947,13 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-right-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_bottom_border {
+#iypirxzurc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_col_headings {
+#iypirxzurc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -943,7 +968,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-right-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_col_heading {
+#iypirxzurc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -963,7 +988,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   overflow-x: hidden;
 }
 
-#yhvjkwzlmh .gt_column_spanner_outer {
+#iypirxzurc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -975,15 +1000,15 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   padding-right: 4px;
 }
 
-#yhvjkwzlmh .gt_column_spanner_outer:first-child {
+#iypirxzurc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#yhvjkwzlmh .gt_column_spanner_outer:last-child {
+#iypirxzurc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#yhvjkwzlmh .gt_column_spanner {
+#iypirxzurc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -995,11 +1020,11 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   width: 100%;
 }
 
-#yhvjkwzlmh .gt_spanner_row {
+#iypirxzurc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#yhvjkwzlmh .gt_group_heading {
+#iypirxzurc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1025,7 +1050,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   text-align: left;
 }
 
-#yhvjkwzlmh .gt_empty_group_heading {
+#iypirxzurc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1040,15 +1065,15 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   vertical-align: middle;
 }
 
-#yhvjkwzlmh .gt_from_md > :first-child {
+#iypirxzurc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#yhvjkwzlmh .gt_from_md > :last-child {
+#iypirxzurc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#yhvjkwzlmh .gt_row {
+#iypirxzurc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1067,7 +1092,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   overflow-x: hidden;
 }
 
-#yhvjkwzlmh .gt_stub {
+#iypirxzurc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1080,7 +1105,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   padding-right: 5px;
 }
 
-#yhvjkwzlmh .gt_stub_row_group {
+#iypirxzurc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1094,15 +1119,15 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   vertical-align: top;
 }
 
-#yhvjkwzlmh .gt_row_group_first td {
+#iypirxzurc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#yhvjkwzlmh .gt_row_group_first th {
+#iypirxzurc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#yhvjkwzlmh .gt_summary_row {
+#iypirxzurc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1112,16 +1137,16 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   padding-right: 5px;
 }
 
-#yhvjkwzlmh .gt_first_summary_row {
+#iypirxzurc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_first_summary_row.thick {
+#iypirxzurc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#yhvjkwzlmh .gt_last_summary_row {
+#iypirxzurc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1131,7 +1156,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-bottom-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_grand_summary_row {
+#iypirxzurc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1141,7 +1166,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   padding-right: 5px;
 }
 
-#yhvjkwzlmh .gt_first_grand_summary_row {
+#iypirxzurc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1151,7 +1176,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-top-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_last_grand_summary_row_top {
+#iypirxzurc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1161,11 +1186,11 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-bottom-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_striped {
+#iypirxzurc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#yhvjkwzlmh .gt_table_body {
+#iypirxzurc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1174,7 +1199,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-bottom-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_footnotes {
+#iypirxzurc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1188,7 +1213,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-right-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_footnote {
+#iypirxzurc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1197,7 +1222,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   padding-right: 5px;
 }
 
-#yhvjkwzlmh .gt_sourcenotes {
+#iypirxzurc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1211,7 +1236,7 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   border-right-color: #D3D3D3;
 }
 
-#yhvjkwzlmh .gt_sourcenote {
+#iypirxzurc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1219,77 +1244,78 @@ N = 947<span class="gt_footnote_marks" style="white-space:nowrap;font-style:ital
   padding-right: 5px;
 }
 
-#yhvjkwzlmh .gt_left {
+#iypirxzurc .gt_left {
   text-align: left;
 }
 
-#yhvjkwzlmh .gt_center {
+#iypirxzurc .gt_center {
   text-align: center;
 }
 
-#yhvjkwzlmh .gt_right {
+#iypirxzurc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#yhvjkwzlmh .gt_font_normal {
+#iypirxzurc .gt_font_normal {
   font-weight: normal;
 }
 
-#yhvjkwzlmh .gt_font_bold {
+#iypirxzurc .gt_font_bold {
   font-weight: bold;
 }
 
-#yhvjkwzlmh .gt_font_italic {
+#iypirxzurc .gt_font_italic {
   font-style: italic;
 }
 
-#yhvjkwzlmh .gt_super {
+#iypirxzurc .gt_super {
   font-size: 65%;
 }
 
-#yhvjkwzlmh .gt_footnote_marks {
+#iypirxzurc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#yhvjkwzlmh .gt_asterisk {
+#iypirxzurc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#yhvjkwzlmh .gt_indent_1 {
+#iypirxzurc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#yhvjkwzlmh .gt_indent_2 {
+#iypirxzurc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#yhvjkwzlmh .gt_indent_3 {
+#iypirxzurc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#yhvjkwzlmh .gt_indent_4 {
+#iypirxzurc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#yhvjkwzlmh .gt_indent_5 {
+#iypirxzurc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#yhvjkwzlmh .katex-display {
+#iypirxzurc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#yhvjkwzlmh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#iypirxzurc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
 <table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<caption><strong>Table 3: Linear Regression Model</strong></caption>
 <colgroup>
 <col style="width: 25%">
 <col style="width: 25%">
