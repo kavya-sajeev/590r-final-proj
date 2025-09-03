@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="Final Project Quarto_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Final Project Quarto_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="Final Project Quarto_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="Final Project Quarto_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="Final Project Quarto_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 </head>
@@ -291,6 +293,87 @@ Table&nbsp;1: Sample of data collected
 </figure>
 </div>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Characteristic</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Coastal<br>
+N = 153</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Non-coastal<br>
+N = 947</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Town Population Size</td>
+<td style="text-align: center;">19,738 (9,958, 45,865)</td>
+<td style="text-align: center;">15,174 (7,912, 30,979)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Town Income Deprivation Status</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">Cities</td>
+<td style="text-align: center;">7 (4.6%)</td>
+<td style="text-align: center;">11 (1.2%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">Higher deprivation towns</td>
+<td style="text-align: center;">102 (67%)</td>
+<td style="text-align: center;">331 (35%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">Lower deprivation towns</td>
+<td style="text-align: center;">18 (12%)</td>
+<td style="text-align: center;">426 (45%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">Mid deprivation towns</td>
+<td style="text-align: center;">26 (17%)</td>
+<td style="text-align: center;">179 (19%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Presence of University in Town</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">No university</td>
+<td style="text-align: center;">143 (93%)</td>
+<td style="text-align: center;">895 (95%)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">University</td>
+<td style="text-align: center;">10 (6.5%)</td>
+<td style="text-align: center;">52 (5.5%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Education Score</td>
+<td style="text-align: center;">-2.1 (-3.9, -0.3)</td>
+<td style="text-align: center;">0.0 (-2.3, 2.6)</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup>1</sup> Median (Q1, Q3); n (%)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tfoot>
+
+</table>
+
+
+</div>
+</div>
 <p>Descriptive statistics of the cohort are depicted above (<strong>?@tbl-descriptive</strong>). 102 (67%) of the coastal towns are higher deprivation towns, while 331 (35%) of non-coastal towns are higher deprivation. The median education score of the cohort is -0.2823641.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -305,23 +388,23 @@ Table&nbsp;1: Sample of data collected
 <p>A linear regression was conducted to assess the association between education score and multiple town factors, including town income deprivation status, presence of university in town, and population size. Regression results are shown below.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="bfspagnhju" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#bfspagnhju table {
+<div id="htnkjrykii" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#htnkjrykii table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#bfspagnhju thead, #bfspagnhju tbody, #bfspagnhju tfoot, #bfspagnhju tr, #bfspagnhju td, #bfspagnhju th {
+#htnkjrykii thead, #htnkjrykii tbody, #htnkjrykii tfoot, #htnkjrykii tr, #htnkjrykii td, #htnkjrykii th {
   border-style: none;
 }
 
-#bfspagnhju p {
+#htnkjrykii p {
   margin: 0;
   padding: 0;
 }
 
-#bfspagnhju .gt_table {
+#htnkjrykii .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -347,12 +430,12 @@ Table&nbsp;1: Sample of data collected
   border-left-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_caption {
+#htnkjrykii .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#bfspagnhju .gt_title {
+#htnkjrykii .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -364,7 +447,7 @@ Table&nbsp;1: Sample of data collected
   border-bottom-width: 0;
 }
 
-#bfspagnhju .gt_subtitle {
+#htnkjrykii .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -376,7 +459,7 @@ Table&nbsp;1: Sample of data collected
   border-top-width: 0;
 }
 
-#bfspagnhju .gt_heading {
+#htnkjrykii .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -388,13 +471,13 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_bottom_border {
+#htnkjrykii .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_col_headings {
+#htnkjrykii .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -409,7 +492,7 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_col_heading {
+#htnkjrykii .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -429,7 +512,7 @@ Table&nbsp;1: Sample of data collected
   overflow-x: hidden;
 }
 
-#bfspagnhju .gt_column_spanner_outer {
+#htnkjrykii .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -441,15 +524,15 @@ Table&nbsp;1: Sample of data collected
   padding-right: 4px;
 }
 
-#bfspagnhju .gt_column_spanner_outer:first-child {
+#htnkjrykii .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#bfspagnhju .gt_column_spanner_outer:last-child {
+#htnkjrykii .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#bfspagnhju .gt_column_spanner {
+#htnkjrykii .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -461,11 +544,11 @@ Table&nbsp;1: Sample of data collected
   width: 100%;
 }
 
-#bfspagnhju .gt_spanner_row {
+#htnkjrykii .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#bfspagnhju .gt_group_heading {
+#htnkjrykii .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -491,7 +574,7 @@ Table&nbsp;1: Sample of data collected
   text-align: left;
 }
 
-#bfspagnhju .gt_empty_group_heading {
+#htnkjrykii .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -506,15 +589,15 @@ Table&nbsp;1: Sample of data collected
   vertical-align: middle;
 }
 
-#bfspagnhju .gt_from_md > :first-child {
+#htnkjrykii .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#bfspagnhju .gt_from_md > :last-child {
+#htnkjrykii .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#bfspagnhju .gt_row {
+#htnkjrykii .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -533,7 +616,7 @@ Table&nbsp;1: Sample of data collected
   overflow-x: hidden;
 }
 
-#bfspagnhju .gt_stub {
+#htnkjrykii .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -546,7 +629,7 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#bfspagnhju .gt_stub_row_group {
+#htnkjrykii .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -560,15 +643,15 @@ Table&nbsp;1: Sample of data collected
   vertical-align: top;
 }
 
-#bfspagnhju .gt_row_group_first td {
+#htnkjrykii .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#bfspagnhju .gt_row_group_first th {
+#htnkjrykii .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#bfspagnhju .gt_summary_row {
+#htnkjrykii .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -578,16 +661,16 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#bfspagnhju .gt_first_summary_row {
+#htnkjrykii .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_first_summary_row.thick {
+#htnkjrykii .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#bfspagnhju .gt_last_summary_row {
+#htnkjrykii .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -597,7 +680,7 @@ Table&nbsp;1: Sample of data collected
   border-bottom-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_grand_summary_row {
+#htnkjrykii .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -607,7 +690,7 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#bfspagnhju .gt_first_grand_summary_row {
+#htnkjrykii .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -617,7 +700,7 @@ Table&nbsp;1: Sample of data collected
   border-top-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_last_grand_summary_row_top {
+#htnkjrykii .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -627,11 +710,11 @@ Table&nbsp;1: Sample of data collected
   border-bottom-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_striped {
+#htnkjrykii .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#bfspagnhju .gt_table_body {
+#htnkjrykii .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -640,7 +723,7 @@ Table&nbsp;1: Sample of data collected
   border-bottom-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_footnotes {
+#htnkjrykii .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -654,7 +737,7 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_footnote {
+#htnkjrykii .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -663,7 +746,7 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#bfspagnhju .gt_sourcenotes {
+#htnkjrykii .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -677,7 +760,7 @@ Table&nbsp;1: Sample of data collected
   border-right-color: #D3D3D3;
 }
 
-#bfspagnhju .gt_sourcenote {
+#htnkjrykii .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -685,72 +768,72 @@ Table&nbsp;1: Sample of data collected
   padding-right: 5px;
 }
 
-#bfspagnhju .gt_left {
+#htnkjrykii .gt_left {
   text-align: left;
 }
 
-#bfspagnhju .gt_center {
+#htnkjrykii .gt_center {
   text-align: center;
 }
 
-#bfspagnhju .gt_right {
+#htnkjrykii .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#bfspagnhju .gt_font_normal {
+#htnkjrykii .gt_font_normal {
   font-weight: normal;
 }
 
-#bfspagnhju .gt_font_bold {
+#htnkjrykii .gt_font_bold {
   font-weight: bold;
 }
 
-#bfspagnhju .gt_font_italic {
+#htnkjrykii .gt_font_italic {
   font-style: italic;
 }
 
-#bfspagnhju .gt_super {
+#htnkjrykii .gt_super {
   font-size: 65%;
 }
 
-#bfspagnhju .gt_footnote_marks {
+#htnkjrykii .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#bfspagnhju .gt_asterisk {
+#htnkjrykii .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#bfspagnhju .gt_indent_1 {
+#htnkjrykii .gt_indent_1 {
   text-indent: 5px;
 }
 
-#bfspagnhju .gt_indent_2 {
+#htnkjrykii .gt_indent_2 {
   text-indent: 10px;
 }
 
-#bfspagnhju .gt_indent_3 {
+#htnkjrykii .gt_indent_3 {
   text-indent: 15px;
 }
 
-#bfspagnhju .gt_indent_4 {
+#htnkjrykii .gt_indent_4 {
   text-indent: 20px;
 }
 
-#bfspagnhju .gt_indent_5 {
+#htnkjrykii .gt_indent_5 {
   text-indent: 25px;
 }
 
-#bfspagnhju .katex-display {
+#htnkjrykii .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#bfspagnhju div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#htnkjrykii div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

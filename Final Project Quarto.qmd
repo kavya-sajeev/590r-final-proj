@@ -46,7 +46,7 @@ tbl_descriptive<-tbl_summary(
 missing_text="Missing")#|>
 #modify_caption("**Table 2: Descriptive Statistics**")
 
-kable_descriptive<-tbl_descriptive|>as_kable_extra(caption="Table 2: Descriptive Statistics")
+as_kable_extra(tbl_descriptive)
 
 #inline stats
 coastaldep<- inline_text(tbl_descriptive, variable= "income_flag", level = "Higher deprivation towns", column = "Coastal")
