@@ -46,5 +46,17 @@ hist(uk$education_score)
 
 
 
+linear_model<-lm(education_score ~ income_flag + university_flag + population_2011, data=uk)
+
+tbl_regression(
+	linear_model,
+	intercept=TRUE,
+	label=list(
+		income_flag~"Town Income Deprivation Status",
+		university_flag~"Presence of University in Town",
+		population_2011~"Population Size"
+	)
+)
+
 ```
 
