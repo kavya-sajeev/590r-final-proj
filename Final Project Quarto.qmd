@@ -19,6 +19,10 @@ uk<-read_csv(here::here("data","english_education.csv"))
 
 ```{r}
 #descriptive statistics
+#| label: tbl-descriptive
+#| tbl-cap: Descriptive statistics
+
+
 tbl_summary(
 	uk,
 	by = coastal,
@@ -41,10 +45,10 @@ missing_text="Missing")
 hist(uk$education_score)
 
 ```
+
+
 ```{r}
 #regression
-
-
 
 linear_model<-lm(education_score ~ income_flag + university_flag + population_2011, data=uk)
 
