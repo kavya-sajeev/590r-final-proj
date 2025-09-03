@@ -17,14 +17,14 @@ library("renv")
 library("gtsummary")
 library("dplyr")
 uk<-read_csv(here::here("data","english_education.csv"))
-
+uksample<-read_csv(here::here("data","Data Sample.csv"))
 ```
-The present report uses the "Educational attainment of young people in English towns" data set provided by the UK Office of National Statistics. The data set collected information based on students who took their GCSEs between 2012 and 2013. 
+The present report uses the "Educational attainment of young people in English towns" data set provided by the UK Office of National Statistics. The data set collected information based on students who took their GCSEs between 2012 and 2013. @tbl-sample shows a sample of the data that was collected.  
 
 ```{r}
-#| label: tbl-test
-#| tbl-cap: "A table!"
-knitr::kable(uk)
+#| label: tbl-sample
+#| tbl-cap: "Sample of data collected"
+knitr::kable(uksample, knitr.kable.NA = '')
 ```
 
 
