@@ -4,7 +4,7 @@ format: html
 ---
 
 ```{r}
-#load datasets
+#load packages and data set
 library("tidyverse")
 library("usethis")
 library("here")
@@ -62,5 +62,18 @@ tbl_regression(
 	)
 )
 
+```
+
+```{r}
+#function
+
+percentmissing<-function(df,var){
+	missing<-sum(is.na(df[[var]]))
+	total<-nrow(df)
+	missing/total*100
+}
+
+percentmissing(uk,"activity_at_age_19_sustained_further_education")
+	
 ```
 
