@@ -4,7 +4,7 @@ format: html
 echo: false
 warning: false
 ---
-The present report uses the "Educational attainment of young people in English towns" data set provided by the UK Office of National Statistics. The data set collected information based on students who took their GCSEs between 2012 and 2013. 
+
 ```{r}
 #| message: false
 #load packages and data set
@@ -18,6 +18,13 @@ library("gtsummary")
 library("dplyr")
 uk<-read_csv(here::here("data","english_education.csv"))
 
+```
+The present report uses the "Educational attainment of young people in English towns" data set provided by the UK Office of National Statistics. The data set collected information based on students who took their GCSEs between 2012 and 2013. 
+
+```{r}
+#| label: tbl-test
+#| tbl-cap: "A table!"
+knitr::kable(uk)
 ```
 
 
@@ -37,13 +44,15 @@ tbl_descriptive<-tbl_summary(
 		university_flag~"Presence of University in Town",
 		education_score~"Education Score"
 	),
-missing_text="Missing")
+missing_text="Missing")|>
+modify_caption("**Table 1: Descriptive Statistics**")
+tbl_descriptive
 
 #inline stats
-coastaldep<- inline_text(tbl_descriptive, variable= "income_flag", column="stat_1")
-noncoastaldep<- inline_text(tbl_descriptive, variable= "income_flag", column="stat_2")
+coastaldep<- inline_text(tbl_descriptive, variable= "income_flag", level = "Higher deprivation towns", column = "Coastal")
+noncoastaldep<- inline_text(tbl_descriptive, variable = "income_flag", level = "Higher deprivation towns", column = "Non-coastal")
 stats<-list(n=nrow(uk),
-									median_edu=median(uk$education_score))
+									median_edu=median(uk$education_score, na.rm=TRUE))
 
 #function
 percentmissing<-function(df,var){
@@ -53,12 +62,13 @@ percentmissing<-function(df,var){
 }
 
 ```
-Descriptive statistics of the cohort are depicted above (@tbl-descriptive). (`r coastaldep`) percent of the coastal towns are higher deprivation towns, while `r noncoastaldep` percent of non-coastal towns are higher deprivation. The median education score of the cohort is `r stats$median_edu`. 
+Descriptive statistics of the cohort are depicted above (@tbl-descriptive). `r coastaldep` of the coastal towns are higher deprivation towns, while `r noncoastaldep` of non-coastal towns are higher deprivation. The median education score of the cohort is `r stats$median_edu`. 
 ```{r}
 #figure
 
 #| label:fig-pop-hist
 #| fig-cap: "Histogram of Population Size"
+
 hist(uk$education_score)
 
 ```
